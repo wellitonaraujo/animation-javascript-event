@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title>Governo</title>
+    <meta name="description" content="Animação em java script e css">
+    <meta name="keywords" content="HTML,CSS,JavaScript">
+    <meta name="author" content="Welliton Araújo">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" type="text/css" media="screen" href="estilo.css">
+    <script src="main.js"></script>
+</head>
+<body>
+
+    <div class="olhos">
+        <div class="olho">
+            <div class="bola"></div>
+        </div>
+            
+        <div class="olho">
+            <div class="bola"></div>
+        </div>
+    </div>
+
+<script>
+    var bolas = document.getElementsByClassName("bola");
+    document.onmousemove = function(){
+        var x = event.clientX * 100 / window.innerWidth + "%";
+        var y = event.clientY * 100 / window.innerHeight + "%";
+   
+        for(var i=0; i<2; i++){
+            bolas[i].style.left = x;
+            bolas[i].style.top = y;
+            bolas[i].style.transform = "translate(-"+x+", -"+y+")";
+        }
+    }
+</script>
+
+</body>
+</html>
