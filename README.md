@@ -1,2 +1,3 @@
-# animacao-olhos-movento
-Animação em CSS e JavaScript de movimentos de olhos 
+# animacao-olhos-movimento
+Animação em CSS e JavaScript de movimentos de olhos
+#
